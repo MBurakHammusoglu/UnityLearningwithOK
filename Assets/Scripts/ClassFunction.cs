@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClassFunction : MonoBehaviour 
+public class ClassFunction : MonoBehaviour
 {
+    
     /*
      * namespace
             class // İşlemleri yani fonksiyonları yönetebilmemiz için ihtiyacımız var.
@@ -16,16 +17,12 @@ public class ClassFunction : MonoBehaviour
             *protected // Miras alan sınıflar kullanabilir. Düz metot çağrılıyor gibi çağrılır.
             *miras alma // bir classın içinde başka bir classa ait olan fonk. ve değişkenleri kullanmak.
 
-
-
-
-    
      */
-
-
 
     void Ahmet()
     {
+       // ogrenciClasim.ogrenciAdiVer();
+       // ogrenciYasVer(); // protected fonk çağrılımı normal method çağırılıyormuş gibi yapılır.
         Debug.Log("Ben ahmete aitim");
     }
     void Ali()
