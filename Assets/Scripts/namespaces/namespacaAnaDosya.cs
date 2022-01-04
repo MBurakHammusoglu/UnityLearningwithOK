@@ -1,16 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using dusmanyonetimi;
 
 public class namespacaAnaDosya : MonoBehaviour
 {
-    // Start is called before the first frame update
+
+    dusman dusman = new dusman();   
     void Start()
     {
-        
+        dusman.saglik();
     }
 
-    // Update is called once per frame
     void Update()
     {
         
