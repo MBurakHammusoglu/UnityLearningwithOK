@@ -27,7 +27,7 @@ public class unityTemelFunction : MonoBehaviour
     }
     private void OnDisable()
     {
-        //2. öncelikte çalışır onEnable'ın tersidir. Aktif degilse çalışır.
+        //2. öncelikte çalışır onEnable'ın tersidir. Aktif degilse çalışır.(Sahnede görünmüyorsa)
     }
 
 
@@ -45,7 +45,8 @@ public class unityTemelFunction : MonoBehaviour
     // güncelleme func. sıraları       fixedupdate->update->lateupdate
     private void FixedUpdate()
     {
-        
+        Debug.Log("Ben Fixedupdate'ten sürekli geldim");
+
     }
 
     void Update()
@@ -54,8 +55,10 @@ public class unityTemelFunction : MonoBehaviour
     }
     private void LateUpdate()
     {
-        
+        // Sahnedeki objelerdeki bütün update metodları çalıştırılıp bitirildikten sonra çalıştırılır.
+        Debug.Log("Ben Lateupdate'ten sürekli geldim");
+
     }
 
-    
+
 }
