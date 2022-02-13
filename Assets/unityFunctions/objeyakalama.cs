@@ -87,6 +87,29 @@ public class objeyakalama : MonoBehaviour
             Debug.Log(gameObject.activeSelf);
         }
         #endregion
+        #region
+        // Tag'den obje yakalama. CompareTag kullanılması tavsiye edilir daha performanslı
+        if (gameObject.CompareTag("Dusman"))
+        {
+            Debug.Log("true");
+        }
+        else
+        {
+            Debug.Log("false");
+        }
+        #endregion
+        #region 
+        /* component ekleme işlemleri; Bazen kod ile component eklemek isteyebiliriz bunun sebebi oyun basında bazı yerlerde kullanmayacagımız
+         tüm componentleri eklemek performans kaybına yol açabilir dolayısıyla kullanacagımız yerde kod ile eklemek zorunda kalabiliriz.*/
+        Rigidbody rg =gameObject.AddComponent<Rigidbody>() as Rigidbody;
+        rg.isKinematic = true;
+        //typeoflu kullanımı
+        SphereCollider sc = gameObject.AddComponent(typeof(SphereCollider)) as SphereCollider;
+        sc.isTrigger = true;
+
+
+        #endregion
+
     }
 
 
