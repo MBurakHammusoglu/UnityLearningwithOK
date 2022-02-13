@@ -4,7 +4,10 @@ using UnityEngine;
 
 public class ilkscript : MonoBehaviour
 {
+    public int yol;
     BoxCollider kup;
+    [SerializeField] int maas;
+    public int yas;
 
     void Start()
     {
