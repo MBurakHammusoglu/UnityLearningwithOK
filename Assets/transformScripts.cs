@@ -54,6 +54,17 @@ public class transformScripts : MonoBehaviour
         {
             Debug.Log("açı sağlandı");
         }
+        // Vector.Max: Verilmiş olan iki pozisyonu karşılaştırır ve her koordinattaki en yüksek değeri alarak yeni koordinat oluşturur.
+        // Vector.Min : Max'in tam tersi küçük olanı alır.
+        // Vector.Sacele : İki vektörü çarparak koordinat değerleri sağlar ve bu verilerden bize vektör döndürür.
+        Vector3 birincipoz = new Vector3(4f, 2f, 5f);
+        Vector3 ikincipoz = new Vector3(2f, 5f, 1f);
+        print(Vector3.Max(birincipoz, ikincipoz));
+        print(Vector3.Min(birincipoz, ikincipoz));
+        print(Vector3.Scale(birincipoz, ikincipoz));
+
+
+
         #endregion
     }
 
