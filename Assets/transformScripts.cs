@@ -27,9 +27,9 @@ public class transformScripts : MonoBehaviour
         baslangiczamani = Time.time;
 
         /*
-         * Time.time:
-         * Time.deltaTime:
-         * Time.timeScale:
+         * Time.time: Oyun başladığı andan itibaren oyunda geçen süreyi hesaplar.
+         * Time.deltaTime:Her karede çalışır.
+         * Time.timeScale:Oyunu yavaşlatabiliriz. Slowmotion ya da oyunu durdurmak istiyorsak pause,play gibi şeylerde kullanılır. Normal calısma süresi 1'dir.
          * */
         #region
         /* 1. kısım
@@ -83,7 +83,7 @@ public class transformScripts : MonoBehaviour
         #region
         //2. kısım
         //lerp metodu: iki obje arasında görünmeyen bir çizgi çizmemizi sağlar.
-        transform.position = Vector3.Lerp(hedef.position,hedef2.position,)
+        transform.position = Vector3.Lerp(hedef.position, hedef2.position,(Time.time-baslangiczamani)*.4f);
 
 
 
