@@ -881,6 +881,25 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 252262679287776542, guid: d6d7f05e4f284f94ba805485fd111056, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d6d7f05e4f284f94ba805485fd111056, type: 3}
+--- !u!1 &2146299459 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8338490086577395313, guid: d6d7f05e4f284f94ba805485fd111056, type: 3}
+  m_PrefabInstance: {fileID: 8338490086019858077}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2146299460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146299459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 411cd1beab419c64f9e58032f809b5c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hedef: {fileID: 819042522}
+  hedef2: {fileID: 596927672}
 --- !u!1001 &8338490086019858077
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -960,5 +979,6 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: f6dfbbe6169e0f848a5e7d85234dd375, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 252262679287776542, guid: d6d7f05e4f284f94ba805485fd111056, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d6d7f05e4f284f94ba805485fd111056, type: 3}
